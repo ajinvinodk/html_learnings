@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="300">
+    <title>Page 3 of html learning</title>
+</head>
+<body>
+    <iframe src="page2.html" width="500" height="200" ></iframe>
+    <hr>
+<!-- -------- -->
+    <a href="page2.html">
+    <button style="background-color: blue;color: red; border-radius:8px;">Click me</button>
+    </a>
+    <hr>
+<!-- -------- -->
+    <button onclick="do_function_call()"  style="background-color: rgb(181, 203, 32);color: rgb(5, 20, 95); border-radius:8px;">Click me</button>
+    
+    <p id="id1">uploading......</p>
+    <script>
+        function do_function_call(){
+            document.getElementById("id1").innerHTML = "Uploaded";
+        }
+    </script>
+    <hr>
+<!-- -------- -->
+    <form>
+        <div>
+            <label for=""title>Title:</label>
+            <label for="Mr">Mr.</label>
+            <input type="radio" name="title" id="Mr">
+            <label for="Mrs">Mrs.</label>
+            <input type="radio" name="title" id="Mrs">
+            <label for="Ms">Ms.</label>
+            <input type="radio" name="title" id="Ms">
+            
+        </div>
+        <br>
+        <div>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Ajin" required>
+        </div>
+        <br>
+        <div>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Vinod" required>
+        </div>
+        
+        <br>
+        <div>
+            <label for="email1">Email:</label>
+            <input type="email" id="email1" name="email" placeholder="ajin@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 94*********"">
+        </div>
+        <br>
+        <div>
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" placeholder="25/12/1994">
+        </div>
+        
+        <br>
+        <div>
+        <label for="payment">Payment:</label>
+        <select id="payment" name="payment">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Rupay">Rupay</option>
+        </select>
+        </div>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+
+</body>
+</html>
